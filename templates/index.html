@@ -1,0 +1,117 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vélib</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    <nav>
+        <h1>Vélib compagnie</h1>
+        <div class="onglets">
+            <a href="#">Home</a>
+            <a href="#Statistique">Statistique</a>
+	   </div>
+    </nav>
+    <header>
+	<img src="{{ url_for('static', filename='velib.png') }}" alt="Une ville">
+    </header>
+    <h1 align="right">Carte des capacité à paris : </h1>
+    <iframe src="{{ url_for('static', filename='bike_stations_map.html') }}" height="500" width="500" align="right" class="image"></iframe>
+    
+    <section class="main" id="Statistique">
+            <div class="card">
+<table border="1" class="dataframe" align="left">
+	<thead>
+    <tr style="text-align: right;">
+      <h1>Donnés statistique : </h1>
+	  <th></th>
+      <th>Capacité</th>
+      <th>vélo </th>
+      <th>station</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>total</th>
+      <td>1449.000000</td>
+      <td>1449.000000</td>
+      <td>1449.000000</td>
+    </tr>
+    <tr>
+      <th>moyenne</th>
+      <td>31.212560</td>
+      <td>9.759144</td>
+      <td>19.572119</td>
+
+    </tr>
+    <tr>
+      <th>écart type</th>
+      <td>11.976454</td>
+      <td>8.790335</td>
+      <td>11.405652</td>
+    </tr>
+    <tr>
+      <th>minimum</th>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>25% < 1 </th>
+      <td>23.000000</td>
+      <td>3.000000</td>
+      <td>11.000000</td>
+    </tr>
+    <tr>
+      <th>50% < 1.5 </th>
+      <td>29.000000</td>
+      <td>7.000000</td>
+      <td>19.000000</td>
+    </tr>
+    <tr>
+      <th>75% < 2.25</th>
+      <td>37.000000</td>
+      <td>14.000000</td>
+      <td>26.000000</td>
+    </tr>
+    <tr>
+      <th>maximum</th>
+      <td>74.000000</td>
+      <td>62.000000</td>
+      <td>67.000000</td>
+    </tr>
+  </tbody>
+</table>
+		
+            </div>
+        </div>
+    </section>
+
+    <footer>
+
+        <h1>A propos</h1>
+        <div class="services">
+            
+            <div class="service">
+                <h3>Contact</h3>
+                <p>PRESSE</p>
+				<p>Ammar Souchon </p>
+				<p>PARTENARIATS</p>
+				<p>RATP</p>
+				<p>ammar.souchon@gmail.com</p>
+            </div>
+            <div class="service">
+                <h3>Rejoignez nous</h3>
+                <p>Envoyez nous un mail, on vous attends.</p>
+            </div>
+			
+        </div>
+
+        <p id="contact">Contact : 07 00 00 00 00| &copy; 2023, 94400 Vitry-sur-Seine</p>
+    </footer>
+</body>
+</html>
+
